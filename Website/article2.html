@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme Simply Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+        p {font-size: 16px;}
+        .margin {margin-bottom: 45px;}
+        .bg-1 {
+            background-color: #1abc9c; /* Green */
+            color: #ffffff;
+        }
+        .bg-2 {
+            background-color: #474e5d; /* Dark Blue */
+            color: #ffffff;
+        }
+        .bg-3 {
+            background-color: #ffffff; /* White */
+            color: #555555;
+        }
+        .bg-4 {
+            background-color: #2f2f2f; /* Black Gray */
+            color: #fff;
+        }
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+        .navbar-nav  li a:hover {
+            color: #1abc9c !important;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">HOME</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+
+                 <li><a href="gitpage.html">GIT</a></li>
+                <li><a href="docker.html">DOCKER</a></li>
+                <li><a href="webserver.html">WEBSERVER</a></li>
+                <li><a href="Vi.html">VI</a></li>
+            	<li><a href="linux.html">Linux</a></li>
+                <li><a href="article1.html">PYLINT TIPS</a></li>
+                <li><a href="article3.html">OOP Principles</a></li>
+                <li><a href="article4.html">Sep of Concerns</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+    <h3 class="margin">AAA Testing</h3>
+    <img src="AAA2.png" class="img-responsive img-circle margin" style="display:inline" alt="AAA Testing" width="350" height="350">
+    <h3></h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+    <h3 class="margin">What is AAA Testing?</h3>
+    <p>Arrange, Act, and Assert is the acronym for Arrange, Act, and Assert. This is an excellent approach to ensure that we're testing every part of a code module. It means to arrange the data in order to prepare it for testing, act on the data by using a method that acts, and assert that the outcome of acting on the data is what we anticipated.</p>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">
+    <h3 class="margin">AAA Testing</h3><br>
+    <div class="row">
+        <div class="col-sm-6">
+            <b>Example of AAA Testing</b>
+            <p>def test_reverse()</p>
+            <p>greek = ['alpha', 'beta', 'gamma', 'delta'] #Arrange</p>
+	    <p>result = greek.reverse() #Act</p>
+            <p>Assert result is None #Assert</p>
+            <p>Assert greek == ['delta', 'gamma', 'beta', 'alpha'] #Assert</p>
+            <b>Why is AAA Testing Important?</b>
+	    <p>AAA testing is important because it isolates a section of code and validates its correctness and assists in identifying and fixing bugs early. It also assures cost savings by resolving bugs as soon as possible and assists developers in improving the design by allowing code refactoring and simplifying the debugging process. </p>
+            <img src="AAA.png" class="img-responsive margin" style="width:500px; height: 500px " alt="Image">
+
+        </div>
+        <div class="col-sm-3">
+             <b>How to use external data for testing (Part 1) </b>
+            <p><b>Define Test Case class in Python Unit Test</b> - Import the unittest library with the command: </p>
+            <b>import unittest</b>
+	    <p>Create a unit test case class that extends the unittest.TestCase with the code: </p>
+	    <p><b>class TestCalculator(unittest.TestCase):</b></p>
+	    <p>Implement class level or instance level setup or teardown function. The class-level setup function will be executed before all test functions only once, while the instance-level setup function will be executed before each test function. Class-level teardown function will be executed after all test functions only once and instance-level teardown function will be executed after each test function.The class-level setup or teardown function should be annotated with @classmethod annotation.</p>
+	    <p>Define test function in the test case class. The test function’s name should start with ‘test_’. And run the target class method which needs to be tested in the test function.</p>
+
+        </div>
+        <div class="col-sm-3">
+	    <b>How to use external data for testing (Part 2) </b>
+	    <p><b>Run Unit Test function in Test Suite </b> - Create an instance of unittest.TestSuite class.</p>
+            <p><b>test_suite = unittest.TestSuite()</b></p>
+            <p>Add test case class object with the test function name to the test suite. You can add multiple test case instance with the different test function name.</p>
+            <p>Create a unittest.TextTestRunner object, and use it to run the test suite</p>
+            <p><b>test_runner = unittest.TextTestRunner()</b></p>
+            <p><b>test_runner.run(test_suite)</b></p>
+            <p>If you want to run all test functions of the test case class, you can invoke unittest.main() function directly with the following code</p>
+            <p><b>unittest.main()</b></p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+    <p>Some further explanation of AAA Testing: <a href="https://medium.com/@pjbgf/title-testing-code-ocd-and-the-aaa-pattern-df453975ab80">AAA Testing</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme Simply Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+        p {font-size: 16px;}
+        .margin {margin-bottom: 45px;}
+        .bg-1 {
+            background-color: #1abc9c; /* Green */
+            color: #ffffff;
+        }
+        .bg-2 {
+            background-color: #474e5d; /* Dark Blue */
+            color: #ffffff;
+        }
+        .bg-3 {
+            background-color: #ffffff; /* White */
+            color: #555555;
+        }
+        .bg-4 {
+            background-color: #2f2f2f; /* Black Gray */
+            color: #fff;
+        }
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+        .navbar-nav  li a:hover {
+            color: #1abc9c !important;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">HOME</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="gitpage.html">GIT</a></li>
+                <li><a href="docker.html">DOCKER</a></li>
+                <li><a href="webserver.html">WEBSERVER</a></li>
+                <li><a href="Vi.html">VI</a></li>
+            	<li><a href="linux.html">Linux</a></li>
+                <li><a href="article1.html">PYLINT TIPS</a></li>
+                <li><a href="article2.html">AAA Testing</a></li>
+                <li><a href="article3.html">OOP Principles</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+    <h3 class="margin">Sep of Concerns</h3>
+    <img src="soc2.png" class="img-responsive img-circle margin" style="display:inline" alt="Separation of Concerns" width="350" height="350">
+    <h3></h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+    <h3 class="margin">What is Separation of Concerns?</h3>
+    <p>separation of concerns (SoC) is a design principle for separating a computer program into distinct sections. Each section addresses a separate concern, a set of information that affects the code of a computer program. </p>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">
+    <h3 class="margin">Separation of Concerns</h3><br>
+    <div class="row">
+        <div class="col-sm-3">
+            <b>Purpose of SoC</b>
+            <p>It's crucial because the individual components' absence of duplication and singularity of purpose makes the entire system easier to manage. Separation of concerns is a technique for reducing connection between classes and increasing cohesion. The degree of interdependence between software components is referred to as coupling. The degree to which the pieces inside a module belong together is referred to as cohesion.</p>
+<p>You can see a nice illustration of cohesiveness in the example below, where the class inherits values from the superclass. Because the program is performed in the module, this reduces coupling.</p>
+
+
+        </div>
+        <div class="col-sm-6">
+            <p></p>
+            <img src="soc.png" class="img-responsive margin" style="width:500px; height: 500px " alt="Image">
+        </div>
+        <div class="col-sm-3">
+	    <p><b>Example of Separation of Concerns from calculator</b></p>
+        <p>You can see separation of concerns in the example below.</p>
+            <p><b>class Subtraction(Calculation):
+    def get_result(self):
+        difference_of_values = 0.0
+        for value in self.values:
+            difference_of_values = difference_of_values - value
+            print.print(value)
+        return difference_of_values</b></p>
+            <p>This is an example of separation of concerns from the calculator program because the calculator has separate files for addition, as well as subtraction, multiplication and division, instead of having all the code crammed up in a single file. This makes the code simpler and easier to understand</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+    <p>More of Separation of Concerns: <a href="https://nalexn.github.io/separation-of-concerns/">SoC Explanation</a></p>
+</footer>
+</body>
+</html>
